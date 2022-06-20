@@ -1,23 +1,14 @@
 public class Box {
 
-    int maxObject = 1;
     boolean empty = false;
     Item<?> item = null;
 
-    public int getMaxObject() {
-        return maxObject;
-    }
-
-    public void setMaxObject(int maxObject) {
-        this.maxObject = maxObject;
-    }
-
-    public boolean isFull() {
+    public boolean isEmpty() {
         return empty;
     }
 
-    public void setFull(boolean full) {
-        this.empty = full;
+    public void setEmpty(boolean empty) {
+        this.empty = empty;
     }
 
     public Item<?> getItem() {
@@ -29,7 +20,7 @@ public class Box {
         this.empty = false;
     }
 
-    public void emptyBox(){
+    public void emptyBox() {
         this.item = null;
         this.empty = true;
     }
